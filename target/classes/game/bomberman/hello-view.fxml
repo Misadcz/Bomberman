@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.bomberman.HelloController">
+   <top>
+                <GridPane prefHeight="100.0" prefWidth="214.0" BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="251.0" minWidth="0.0" prefWidth="233.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="327.0" minWidth="0.0" prefWidth="109.0" />
+            <ColumnConstraints maxWidth="652.0" minWidth="63.0" prefWidth="133.0" />
+            <ColumnConstraints maxWidth="453.0" minWidth="37.0" prefWidth="115.0" />
+            <ColumnConstraints maxWidth="229.0" minWidth="0.0" prefWidth="0.0" />
+            <ColumnConstraints maxWidth="338.0" minWidth="0.0" prefWidth="210.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="57.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label text="Lifes:" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Consolas Bold" size="20.0" />
+               </font></Label>
+                        <Label fx:id="lives" prefHeight="30.0" prefWidth="438.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label text="Timer:" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Consolas Bold" size="20.0" />
+               </font></Label>
+                        <Label fx:id="timers" text="0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="Consolas Bold" size="20.0" />
+                            </font>
+                        </Label>
+            <Label fx:id="score" alignment="CENTER" contentDisplay="CENTER" lineSpacing="10.0" prefHeight="23.0" prefWidth="0.0" text="00" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Consolas Bold" size="20.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <GridPane.margin>
+                  <Insets left="100.0" />
+               </GridPane.margin>
+            </Label>
+                    </children>
+                </GridPane>
+   </top>
+   <right>
+                <Canvas fx:id="canvas" height="600.0" width="800.0" BorderPane.alignment="CENTER" />
+   </right>
+
+</BorderPane>
